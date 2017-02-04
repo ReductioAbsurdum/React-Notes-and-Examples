@@ -34,7 +34,7 @@ React.createElement()
   * Typically you don't use this when using JSX
 
 EX: level1/index3.html
-Here we use JSX but need to transpile it, we were using Babel to convert ```html <h1>h1</h1>``` to React.createElement('h1', null, 'hi');
+Here we use JSX but need to transpile it, we were using Babel to convert ```html <h1>hi</h1>``` to React.createElement('h1', null, 'hi');
   * Babel also transpiles your ES6 to javascript readable by the browser
   * Babel is sort of an all purpose ES6, React element, compiler
   * WARNING: Babel compiles at runtime and that's slow, so don't use in production
