@@ -3,7 +3,7 @@
 
 ##LEARNING REACT JS:
 
-###1(WHAT IS REACT.JS):
+###Overview (What is ReactJS):
 React is a javascript library used for UI, created at Facebook, and maintained open source. The benefits are using a virtual DOM, so when a change takes place in the DOM based on user input or any updates, the virtual DOM will efficiently re-render the DOM.
 * Reading and writing to the DOM is taxing on efficiency, react reads and writes to the virtual DOM so it's more efficient
 
@@ -39,7 +39,7 @@ Here we use JSX but need to transpile it, we were using Babel to convert ```html
   * Babel is sort of an all purpose ES6, React element, compiler
   * WARNING: Babel compiles at runtime and that's slow, so don't use in production
 <hr>
-###level 2 (Three ways to create components in React):
+###Level 2 (Three ways to create components in React):
 
 In React we use components. Components are bits/ pieces of an overall website. You can have an entire website be a component and have sub components within the component. Components are typically their own tag.
   Component building steps:
@@ -61,7 +61,7 @@ Ex: level2/index6.html
 Stateless functional components are just simple functions that return React component elements. You do NOT use render() inside a stateless functional component.
 
 <hr>
-###level 3 (Props, Custom methods, State, and Refs):
+###Level 3 (Props, Custom methods, State, and Refs):
 
 EX: level3/index7.html
 Here we are going to be sending properties to our components which is similar to adding attributes to HTML elements.
@@ -90,4 +90,4 @@ It's important to understand refs in React, it's basically a way to set up virtu
   * A ref is a reference to a virtualDOM element's value. We get all the ref values through this.refs.NameOfRef.value
 <hr>
 
-###level 4:
+###Level 4:
