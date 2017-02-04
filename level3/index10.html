@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>level3 index10</title>
+    <link rel="stylesheet" href="../global_css/style.css">
+    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+  </head>
+  <body>
+    <div id="react-component"></div>
+  </body>
+
+  <script type="text/babel">
+  var Check = React.createClass({
+    getInitialState() {
+      return {checked:true}
+    },
+    changeTheState() {
+      this.setState({checked : !this.state.checked})
+    },
+    render() {
+      var isChecked;
+      if(this.state.checked){
+        isChecked = "checked!";
+      }else{
+        isChecked = "not checked :("
+      }
+      return (
+        <div>
+          <input type="checkbox"
+          onChange={this.changeTheState}
+          defaultChecked={this.state.checked}/>
+
+          <p>the box is {isChecked}</p>
+        </div>
+      )
+    }
+  });
+
+  ReactDOM.render(<Check/>, document.getElementById('react-component'));
+  </script>
+</html>

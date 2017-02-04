@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>level3 index11</title>
+    <link rel="stylesheet" href="../global_css/style.css">
+    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+  </head>
+  <body>
+    <div id="react-component"></div>
+  </body>
+
+  <script type="text/babel">
+  var Refcom = React.createClass({
+    getInitialState() {
+      return {message: this.props.mes}
+    },
+    changeMessage() {
+      this.setState({message : this.refs.MyText.value})
+    },
+    render() {
+      return (
+        <div>
+          <input type="text" ref="MyText"/>
+          <button onClick={this.changeMessage}>change message</button>
+          <p>The message is {this.state.message}</p>
+        </div>
+      )
+    }
+  });
+
+  ReactDOM.render(<Refcom mes="Hello green goblin"/>, document.getElementById('react-component'));
+  </script>
+</html>

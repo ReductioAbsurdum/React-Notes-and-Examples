@@ -1,0 +1,7 @@
+div.note {
+  background-color: orange;
+  display: inline-block;
+  padding: 5px;
+  width: 200px;
+  text-align: center;
+}

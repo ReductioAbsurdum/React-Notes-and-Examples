@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>level3 index8</title>
+    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+  </head>
+  <body>
+    <div id="react-component"></div>
+  </body>
+
+  <script type="text/babel">
+  //this.props.myText is getting the myText attribute where we are rendering to the DOM
+  //this.props.children is getting the text between the component tags where we render to the DOM
+  class AwesomeComponent extends React.Component{
+    render(){
+      return <div>
+                <h1>{this.props.myText}</h1>
+                <p>{this.props.children}</p>
+             </div>
+    }
+  }
+  //Up here were are writing different text to the myText property
+
+  ReactDOM.render(<div>
+    <AwesomeComponent myText="Hello Computer World"/>
+    <AwesomeComponent myText="Hello Real World"/>
+    <AwesomeComponent myText="Goodbye Everyone and Everything"/>
+      </div>, document.getElementById('react-component'));
+
+//Down here we are closing the component tags and writing to props object children, uncomment to check it out!
+/*
+  ReactDOM.render(<div>
+    <AwesomeComponent myText="Hello Computer World">
+    Things are going good!
+    </AwesomeComponent>
+    <AwesomeComponent myText="Hello Real World">
+    Things are going ok.
+    </AwesomeComponent>
+    <AwesomeComponent myText="Goodbye Everyone and Everything">
+    Things are terrible :(
+    </AwesomeComponent>
+      </div>, document.getElementById('react-component'));
+*/
+  </script>
+</html>
