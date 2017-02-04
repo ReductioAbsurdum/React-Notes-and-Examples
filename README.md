@@ -5,24 +5,24 @@
 
 ###1(WHAT IS REACT.JS):
 React is a javascript library used for UI, created at Facebook, and maintained open source. The benefits are using a virtual DOM, so when a change takes place in the DOM based on user input or any updates, the virtual DOM will efficiently re-render the DOM.
--Reading and writing to the DOM is taxing on efficiency, react reads and writes to the virtual DOM so it's more efficient
+* Reading and writing to the DOM is taxing on efficiency, react reads and writes to the virtual DOM so it's more efficient
 
-    React is FAST! Javascript objects are faster than DOM objects. The React Virtual DOM is a javascript object which react reads to rather than reading from the actual DOM object. React only writes to the actual DOM whenever it needs to.
-      -When we call render in React, javascript is only making changes to the virtual DOM, whereas other frameworks will make direct changes to the actual DOM
-      -The virtual DOM is like a mediator between the Javascript logic and the actual DOM
+React is FAST! Javascript objects are faster than DOM objects. The React Virtual DOM is a javascript object which react reads to rather than reading from the actual DOM object. React only writes to the actual DOM whenever it needs to.
+* When we call render in React, javascript is only making changes to the virtual DOM, whereas other frameworks will make direct changes to the actual DOM
+* The virtual DOM is like a mediator between the Javascript logic and the actual DOM
 
-    React is writing HTML inside the javascript with JSX instead of on the HTML page
+React is writing HTML inside the javascript with JSX instead of on the HTML page
 <hr>
-  (For anything vaguely written on this page for any levels, look up more info at source api docs: https://facebook.github.io/react/docs/react-api.html)
+  For anything vaguely written on this page for any levels, look up more info at source api docs: https://facebook.github.io/react/docs/react-api.html
 <hr>
 
-  Level 1 (Creating Elements and rendering React to the DOM):
+###Level 1 (Creating Elements and rendering React to the DOM):
 
-  EX: level1/index.html
-  ReactDOM.createElement() //two params:
-    -1st is element to create, EX: React.createElement('div', null, 'Hello World');
-    -2nd is where in the DOM you are placing this react element
-      -EX: document.getElementById('react-container');
+EX: level1/index.html
+ReactDOM.createElement() //two params:
+* 1st is element to create, EX: React.createElement('div', null, 'Hello World');
+* 2nd is where in the DOM you are placing this react element
+  * EX: document.getElementById('react-container');
 
   EX: level1/index2.html
   React.createElement: 3 params:
