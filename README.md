@@ -39,6 +39,7 @@ Here we use JSX but need to transpile it, we were using Babel to convert ```html
   * Babel is sort of an all purpose ES6, React element, compiler
   * WARNING: Babel compiles at runtime and that's slow, so don't use in production
 <hr>
+
 ###Level 2 (Three ways to create components in React):
 
 In React we use components. Components are bits/ pieces of an overall website. You can have an entire website be a component and have sub components within the component. Components are typically their own tag.
