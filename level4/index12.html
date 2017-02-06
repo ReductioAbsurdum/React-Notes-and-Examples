@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>level4 index12</title>
+    <link rel="stylesheet" href="../global_css/style.css">
+    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+  </head>
+  <style media="screen">
+    #myDiv{
+      background-color: blue;
+      height: 200px;
+      width: 200px;
+    }
+  </style>
+  <body>
+    <div id="react-component"></div>
+  </body>
+
+  <script type="text/babel">
+  var Box = React.createClass({
+    componentWillMount(){
+      alert('component is about to mount');
+    },
+    componentDidMount(){
+      alert('component just mounted');
+    },
+    render(){
+      return (<div id='myDiv'></div>)
+    }
+  });
+  ReactDOM.render(<Box/>, document.getElementById('react-component'));
+  var getRidOfBox = document.getElementById('myDiv');
+  getRidOfBox.onclick = function(){
+    ReactDOM.unmountComponentAtNode(document.getElementById('react-component'));
+    alert('component is unmounted');
+  }
+  </script>
+</html>

@@ -91,4 +91,39 @@ It's important to understand refs in React, it's basically a way to set up virtu
   * A ref is a reference to a virtualDOM element's value. We get all the ref values through this.refs.NameOfRef.value
 <hr>
 
-###Level 4:
+###level 4 (Component Lifecycle methods):
+
+EX: level4/index12.html
+In this example you can checkout lifecycle methods:
+  * componentWillMount() is called right before the render function
+  * componentDidMount() is called right after the render function finishes
+  * unmountComponentAtNode() is called outside the component on the ReactDOM obj to delete the component from the DOM
+
+EX: level4/index13.html
+Here we are setting up default props through the getDefaultProps() method. This can be used to set up styles for our virtualDOM elements and you can reuse the style object returned from getDefaultProps() multiple times throughout your component elements
+
+EX: level4/index14.html
+Now we can set up our style with getInitialState and set the div element to this.state to access the css properties. We will also add an update function where update changes the backgroundColor to red when you click on the div. componentDidUpdate() is added to trigger an alert once the component updates.
+
+<hr>
+###level 5 (Create-React-App):
+
+Create React App:
+  * install with npm (create-react-app)
+  * cd into the file you want to create your app in
+  * create-react-app <app name>
+  * cd into <app name>
+  * npm start //this will run your project on localhost:3000
+  //create React App will install all your dependencies in a package.json
+
+With create-react-app, our main app is located in the src/app.js file. We need to export the filename so if you change app.js to something else be sure to change the export at the bottom of the page
+
+The index.js file is what renders the ReactDOM (virtual DOM) to the DOM
+
+You can run a production build by typing in terminal: npm run build
+  * this minifies all your code and creates a production ready react app
+
+Further tools to checkout:
+  * react native : build native mobile apps
+  * flex: instead of MVC framework you work in a flex flow
+  * Redux: flex library to simplify state in complex applications
