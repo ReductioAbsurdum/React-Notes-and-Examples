@@ -12,8 +12,11 @@ React is FAST! Javascript objects are faster than DOM objects. The React Virtual
 * The virtual DOM is like a mediator between the Javascript logic and the actual DOM
 
 React is writing HTML inside the javascript with JSX instead of on the HTML page
+  * JSX stands for Javascript as XML
 <hr>
-  For anything vaguely written on this page for any levels, look up more info at source api docs: https://facebook.github.io/react/docs/react-api.html
+  To use this repo for learning React Basics, simple locate the files based on the EX path. Read the notes listed on the Readme to get an idea of what's going on in the file example.
+
+  For anything vaguely written on this page for any of the levels and examples, look up more info at source api docs: https://facebook.github.io/react/docs/react-api.html
 <hr>
 
 ###Level 1 (Creating Elements and rendering React to the DOM):
@@ -31,23 +34,23 @@ React.createElement()
   * 2nd is [props]
   * 3rd is children for this element, what goes inside the tags
     * You can list multiple React.createElement() in the 3rd parameter as shown in getting_started/index2.html
-  * Typically you don't use this when using JSX
+  * Typically you don't use this when using JSX, instead you write the JSX tag in place of the React.createElement()
 
 EX: level1/index3.html
 Here we use JSX but need to transpile it, we were using Babel to convert ```html <h1>hi</h1>``` to React.createElement('h1', null, 'hi');
   * Babel also transpiles your ES6 to javascript readable by the browser
-  * Babel is sort of an all purpose ES6, React element, compiler
+  * Babel is sort of an all purpose ES6/ JSX compiler
   * WARNING: Babel compiles at runtime and that's slow, so don't use in production
 <hr>
 
 ###Level 2 (Three ways to create components in React):
 
-In React we use components. Components are bits/ pieces of an overall website. You can have an entire website be a component and have sub components within the component. Components are typically their own tag.
+In React we use components. Components are bits/ pieces of an overall website. You can have an entire website be a component and have sub components within the component. Components are typically their own tag. <br>
   Component building steps:
-    1st: create tag in DOM you plan to render components to
-    2nd: create component in Javascript/Babel
-    3rd: render component to DOM
-    4th: insert any properties inside component tags where you render to the DOM and put these properties inside your component between curly braces {}
+    * 1st: create tag in DOM you plan to render components to
+    * 2nd: create component in Javascript/Babel
+    * 3rd: render component to DOM
+    * 4th: insert any properties inside component tags where you render to the DOM and put these properties inside your component between curly braces {}
 
 EX: level2/index4.html
 First off, it's good practice to write components in CamelCase with the first letter Caped as well. You'll treat your react component as a variable, call React.createClass ... or whatever you want to create, and render it to the DOM.
