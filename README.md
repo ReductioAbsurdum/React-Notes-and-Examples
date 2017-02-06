@@ -47,10 +47,10 @@ Here we use JSX but need to transpile it, we were using Babel to convert ```html
 
 In React we use components. Components are bits/ pieces of an overall website. You can have an entire website be a component and have sub components within the component. Components are typically their own tag. <br>
   Component building steps:
-    * 1st: create tag in DOM you plan to render components to
-    * 2nd: create component in Javascript/Babel
-    * 3rd: render component to DOM
-    * 4th: insert any properties inside component tags where you render to the DOM and put these properties inside your component between curly braces {}
+  * 1st: create tag in DOM you plan to render components to
+  * 2nd: create component in Javascript/Babel
+  * 3rd: render component to DOM
+  * 4th: insert any properties inside component tags where you render to the DOM and put these properties inside your component between curly braces {}
 
 EX: level2/index4.html
 First off, it's good practice to write components in CamelCase with the first letter Caped as well. You'll treat your react component as a variable, call React.createClass ... or whatever you want to create, and render it to the DOM.
