@@ -65,6 +65,7 @@ Ex: level2/index6.html
 Stateless functional components are just simple functions that return React component elements. You do NOT use render() inside a stateless functional component.
 
 <hr>
+
 ### Level 3 (Props, Custom methods, State, and Refs):
 
 EX: level3/index7.html
@@ -109,6 +110,7 @@ EX: level4/index14.html
 Now we can set up our style with getInitialState and set the div element to this.state to access the css properties. We will also add an update function where update changes the backgroundColor to red when you click on the div. componentDidUpdate() is added to trigger an alert once the component updates.
 
 <hr>
+
 ### level 5 (Create-React-App):
 
 Create React App:
