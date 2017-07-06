@@ -1,9 +1,9 @@
 # React-Notes-and-Examples
-####These are notes and examples for learning the Framework React
+#### These are notes and examples for learning the Framework React
 
-##LEARNING REACT JS:
+## LEARNING REACT JS:
 
-###Overview (What is ReactJS):
+### Overview (What is ReactJS):
 React is a javascript library used for UI, created at Facebook, and maintained open source. The benefits are using a virtual DOM, so when a change takes place in the DOM based on user input or any updates, the virtual DOM will efficiently re-render the DOM.
 * Reading and writing to the DOM is taxing on efficiency, react reads and writes to the virtual DOM so it's more efficient
 
@@ -19,7 +19,7 @@ React is writing HTML inside the javascript with JSX instead of on the HTML page
   For anything vaguely written on this page for any of the levels and examples, look up more info at source api docs: https://facebook.github.io/react/docs/react-api.html
 <hr>
 
-###Level 1 (Creating Elements and rendering React to the DOM):
+### Level 1 (Creating Elements and rendering React to the DOM):
 
 EX: level1/index.html
 ReactDOM.createElement()
@@ -43,7 +43,7 @@ Here we use JSX but need to transpile it, we were using Babel to convert ```html
   * WARNING: Babel compiles at runtime and that's slow, so don't use in production
 <hr>
 
-###Level 2 (Three ways to create components in React):
+### Level 2 (Three ways to create components in React):
 
 In React we use components. Components are bits/ pieces of an overall website. You can have an entire website be a component and have sub components within the component. Components are typically their own tag. <br>
   Component building steps:
@@ -65,7 +65,7 @@ Ex: level2/index6.html
 Stateless functional components are just simple functions that return React component elements. You do NOT use render() inside a stateless functional component.
 
 <hr>
-###Level 3 (Props, Custom methods, State, and Refs):
+### Level 3 (Props, Custom methods, State, and Refs):
 
 EX: level3/index7.html
 Here we are going to be sending properties to our components which is similar to adding attributes to HTML elements.
@@ -94,7 +94,7 @@ It's important to understand refs in React, it's basically a way to set up virtu
   * A ref is a reference to a virtualDOM element's value. We get all the ref values through this.refs.NameOfRef.value
 <hr>
 
-###level 4 (Component Lifecycle methods):
+### level 4 (Component Lifecycle methods):
 
 EX: level4/index12.html
 In this example you can checkout lifecycle methods:
@@ -109,7 +109,7 @@ EX: level4/index14.html
 Now we can set up our style with getInitialState and set the div element to this.state to access the css properties. We will also add an update function where update changes the backgroundColor to red when you click on the div. componentDidUpdate() is added to trigger an alert once the component updates.
 
 <hr>
-###level 5 (Create-React-App):
+### level 5 (Create-React-App):
 
 Create React App:
   * install with npm (create-react-app)
